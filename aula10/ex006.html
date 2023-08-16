@@ -28,6 +28,8 @@
         a.addEventListener('click', clicar)
         a.addEventListener('mouseenter', entrar)
         a.addEventListener('mouseout', sair)
+        a.addEventListener('mousedown', trocar)
+
         function clicar() {
             a.innerText = 'Clicou!'
             a.style.background = 'red'
@@ -40,6 +42,10 @@
         function sair(){
             a.innerText = 'Saiu!'
             a.style.background = 'green'
+        }
+        function trocar() {
+            a.innerText = 'Roxo'
+            a.style.background = 'purple'
         }
     </script>
 </body>
