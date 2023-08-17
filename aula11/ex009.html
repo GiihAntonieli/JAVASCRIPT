@@ -8,23 +8,22 @@
 <body>
     <h1>Pesquisa de nacionalidade</h1>
     <input type="text" name="txt" id="txt">
-    <input type="button" value="Verificar" onclick="pesquisar()">
+    <input type="button" value="Verificar" id="button" onclick="pesquisar()">
     <div id="res">
-Brasileiro
+
     </div>
     <script>
         function pesquisar(){
-            var pais = window.document.querySelector('input#txt')
-            var res = window.document.querySelector('div#res')
-            var nacionalidade = String(pais)
-            res.innerHTML = ` Agradecemos sua participação em nossa pesquisa!</p>`
-
-            if(nacionalidade == 'Brasileiro'){
-                res.innerHTML += `<strong>Brasileiro</strong>!`
+            var país = window.document.getElementById('txt')
+            var país = String(txt.value)
+            var res = window.document.getElementById('res')
+            //var brasil = 'brasileiro'
+            if(país == 'Brasileiro'){
+                res.innerHTML = '<strong>Brasileiro!</strong>'
             }else{
-                res.innerHTML += `<strong>Estrangeiro</strong>!`
+                res.innerHTML += '<strong>Estrangeiro!</strong>'
             }
-            
+            res.innerHTML += `<p>Agradecemos sua participação em nossa pesquisa!</p>`
         }
     </script>
 </body>
