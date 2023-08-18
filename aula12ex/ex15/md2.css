@@ -12,6 +12,7 @@ body{
 header{
     text-align: center;
     color: white;
+    padding: 10px;
 }
 section{
     background-color: white;
@@ -19,11 +20,27 @@ section{
     margin: auto;
     padding: 15px;
     width: 500px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.493);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.352);
     
+}
+p{
+    padding: 10px;
+}
+#button{
+    padding: 3px;
+    width: 80px;
+
+}
+#button:hover{
+    background-color: rgb(119, 197, 223);
+    color: white;
+}
+#res{
+    padding: 10px;
 }
 footer{
     text-align: center;
     color: white;
     font-style: italic;
+    padding: 10px;
 }
