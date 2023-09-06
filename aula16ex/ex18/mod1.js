@@ -1,6 +1,0 @@
-function ad(){
-
-}
-function final(){
-    
-}
